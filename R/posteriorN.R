@@ -20,6 +20,7 @@ function(p, nf=0, maxN=1000, ci.int=0.95, plot=TRUE, dist=FALSE){
 
  # from version 1.4 onwards 
   pCgN <-  dbinom(nf, size=N, prob=p) # prob of a count given p and N
+  if(sum(pCgN)==0) stop("maxN is lower than the lower edge of the posterior distribution. Increase maxN!")
   pN <- pCgN/sum(pCgN)
   # check if maxN large enough
   if(pN[maxN]>0.0001) warning("Posterior density of maxN is above 0.0001, you may want to increase maxN")

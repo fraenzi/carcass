@@ -46,6 +46,7 @@ Fraenzi Korner-Nievergelt
 }
 \note{
 The function does not take into account the uncertainty of the estimate for the detection probability. If you want do account for this uncertainty, use the function estimateN.
+For reporting bugs in the code, we would like to thank A. Marcia Barbosa.
 }
 
 
