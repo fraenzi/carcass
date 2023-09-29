@@ -16,14 +16,6 @@ see worked example in Korner-Nievergelt et al 2011, and 2015.
 
 }
 \details{
-\tabular{ll}{
-Package: \tab carcass\cr
-Type: \tab Package\cr
-Version: \tab 1.6\cr
-Date: \tab 2016-05-31\cr
-License: \tab GUI2\cr
-LazyLoad: \tab yes\cr
-}
 }
 \author{
 Fraenzi Korner-Nievergelt, Ivo Niermann, Oliver Behr, Matthew A. Etterson, 
@@ -52,6 +44,6 @@ energy turbines from carcass searches. Wildlife Biology 17: 350-363\cr
 
 Korner-Nievergelt F, Behr O, Brinkmann R, Etterson MA, Huso MM, Dalthorp D, 
 Korner-Nievergelt P, Roth T, Niermann I (2015) Mortality estimation from carcass 
-searches using the R-package carcass — a tutorial. Wildlife Biology 21: 30-43.
+searches using the R-package carcass ? a tutorial. Wildlife Biology 21: 30-43.
 }
 \keyword{ package }
