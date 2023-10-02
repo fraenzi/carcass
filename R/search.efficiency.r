@@ -4,6 +4,7 @@
 ###########################################################################
 
 # Protocol of changes
+# - fk, 2.10.2023: changed class(dat) != "data.frame" to !inherits(dat, "data.frame)
 # - fk, 8.5.2016: line 35: definition of person and visibility class as factor
 # - fk, 8.5.2016: for number of visibility classes= 1: calculation of overall f changed, we use mixed models now to average over the persons
 # - fk, 2.7.14:  line 152: change npersons==2 into npersons<=4 & npersons>1 (bug reported by Joanna Bernardino)
@@ -24,12 +25,12 @@ search.efficiency <- function(dat=NA, person=NA, visibility=NA, detected=NA, not
 # Finally:
 # - nsim: number of simulations to be drawn from the posterior distributions to describe the 95% credible intervals
   
-if(is.na(person[1]) & class(dat) != "data.frame") {
+if(is.na(person[1]) & !inherits(dat, "data.frame")) {
   stop("Please provide the data either as a data.frame containing all data or, alternatively
 as seperate vectors (i.e. the vector person, visibility, detected, nondetected).")
 }
     
-if(class(dat) != "data.frame") {
+if(!inherits(dat, "data.frame")) {
   if(length(person)!=length(visibility) | length(person)!=length(detected) | length(person)!=length(notdetected)) {
     stop("The vector 'person', 'visibility', 'detected' and 'notdetected' should all have the same length.")
   }
