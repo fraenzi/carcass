@@ -15,8 +15,6 @@ of the number of fatalities based on the number of carcasses found and the estim
 see worked example in Korner-Nievergelt et al 2011, and 2015.
 
 }
-\details{
-}
 \author{
 Fraenzi Korner-Nievergelt, Ivo Niermann, Oliver Behr, Matthew A. Etterson, 
 Robert Brinkmann, Pius Korner, Barbara Hellriegel, Tobias Roth, 
