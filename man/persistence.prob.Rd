@@ -53,8 +53,8 @@ Whether the models used in this function fits to your data is not in the respons
 }
 
 \seealso{
-\code{\link{coxph}}
-\code{\link{survreg}}
+\code{\link[coxph]{coxph}}
+\code{\link[survreg]{survreg}}
 }
 \examples{
 data(persistence)
